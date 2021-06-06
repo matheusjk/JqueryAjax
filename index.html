@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha Pagina</title>
+    <!-- <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- <input type="text" id="cep2"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CEP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" id="cep" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="button" >Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h2 class="display-4">CEP</h2>
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">CEP</th>
+          <th scope="col">Endereço</th>
+          <!-- <th scope="col">Complemento</th> -->
+          <th scope="col">Bairro</th>
+          <th scope="col">Cidade</th>
+          <th scope="col">UF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="cepTabela"></th>
+          <td id="logradouro"></td>
+          <td id="bairro"></td>
+          <td id="localidade"></td>
+          <td id="uf"></td>
+        </tr>
+      </tbody>
+  </table>
+
+  <!-- <div id="mapa" style="width:100%;height:600px;"></div> -->
+</div>
+
+
+    <!-- <script>
+
+        document.getElementById("cep2").addEventListener('keypress', function(e){
+            console.log("TO AQUI FUNFANDO ");
+            console.log(e.key + "| " + e.keyCode);
+        });
+
+        document.getElementById("cep2").addEventListener('focusout', function(e){
+            alert("SAI E FUI PRO PROXIMO INPUT E BUSCAR O CEP!!!")
+        });
+    </script> -->
+
+    <script type="text/javascript" src="bootstrap-5.0.1-dist/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-5.0.1-dist/js/main.js"></script>
+</body>
+</html>
